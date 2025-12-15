@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Create = () => {
+
+    const [formData, setFormData] = useState({
+        productName: '',
+        productPrice: '',
+        productDescription: '',
+        productImage: ''
+    });
+
+    const handleChange = (e) => {
+        console.log(e.target.value);
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission logic here
+    }   
+
   return (
     <div className='container mx-auto p-4 min-h-screen max-w-2xl'>
         <h1 className='text-3xl font-bold mb-4'>Create Products</h1>
         <form className='space-y-4'>
             <div>
                 <label className='block mb-1 font-semibold' htmlFor='productName'>Product Name:</label>
-                <input className='w-full p-2 border border-gray-300 rounded' type='text' id='productName' name='productName' onChange={()=>handleChange(e.target.value)}/>
+                <input className='w-full p-2 border border-gray-300 rounded' type='text' id='productName' name='productName' onChange={handleChange}/>
 
             </div>
             <div>
