@@ -40,7 +40,7 @@ const Home = ({ setId }) => {
   }, [deleteData]);
 
   return (
-    <div className="max-w-7xl mx-auto p-5">
+    <div className="max-w-7xl mx-auto p-5 min-h-screen">
       <h1 className="text-3xl font-bold mb-5">Product List</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {data.map((product) => (

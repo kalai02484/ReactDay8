@@ -1,16 +1,55 @@
-# React + Vite
+# React Day 8 Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is part of a React learning series, focusing on Day 8 concepts and implementations.
 
-Currently, two official plugins are available:
+## Project Structure
+```
+ReactDay8/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── App.js
+│   └── index.js
+├── public/
+├── package.json
+└── README.md
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## React Compiler
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
+```bash
+npm install
+```
 
-## Expanding the ESLint configuration
+### Running the Project
+```bash
+npm start
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application will open at `http://localhost:3000`
+
+## Key Concepts
+- React Hooks (useState, useEffect)
+- Component Lifecycle
+- State Management
+- Props and Component Communication
+
+## Available Scripts
+- `npm start` - Runs the development server
+- `npm build` - Builds for production
+- `npm test` - Runs tests
+
+## Learning Objectives
+- Understand advanced React patterns
+- Practice component composition
+- Implement state management
+
+## Resources
+- [React Documentation](https://react.dev)
+- [Create React App Docs](https://create-react-app.dev)
